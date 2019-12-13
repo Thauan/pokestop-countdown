@@ -16,6 +16,8 @@ function counter() {
     seconds--;
 
     if (seconds == -1 && minutes == 0) {
+      document.getElementById('coinAudio').play();
+
       display.innerHTML = ">";
       playBtn.classList.remove("centerCount");
       playBtn.classList.add("centerPlay");
